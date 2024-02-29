@@ -1,6 +1,6 @@
 # Self-Hosted excalidraw
 
-The goal is a docker-compose configuration for a fully self-hosted [excalidraw](https://github.com/excalidraw/excalidraw) with collaborationen support. The configuration is for a [traefik](https://github.com/traefik/traefik) setup and uses a [MongoDB](https://github.com/mongodb/mongo) for the storage. Also includes [mongo-express](https://github.com/mongo-express/mongo-express) as a MongoDB admin interface.
+The goal is a docker-compose configuration for a fully self-hosted [Excalidraw](https://github.com/excalidraw/excalidraw) with collaboration support. The configuration is for a [traefik](https://github.com/traefik/traefik) setup and uses a [MongoDB](https://github.com/mongodb/mongo) for the storage. Also includes [mongo-express](https://github.com/mongo-express/mongo-express) as a MongoDB admin interface.
 
 The original version of excalidraw only supporting Firebase for the storage. For achieving a self-hosted storage, a modified version of excalidraw is used:
 
