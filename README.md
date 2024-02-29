@@ -40,7 +40,6 @@ The "Export" function to the [Excalidraw+ workspace](https://plus.excalidraw.com
 - <https://github.com/alswl/excalidraw-collaboration>
 - <https://github.com/Nenodema/excalidraw-self-hosted-stack>
 - <https://github.com/cocreators-ee/excalidraw-alternative-store>
-- <https://github.com/cocreators-ee/excalidraw-alternative-store>
 
 Have fun,
 
