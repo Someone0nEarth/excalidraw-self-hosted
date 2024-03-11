@@ -18,9 +18,9 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=${TRAEFIK_NETWORK_NAME}"
-      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-app-secure.rule=Host(`${APP_HOST}`)"
-      - "traefik.http.services.${TRAEFIK_LABEL_ID}-app-secure.loadbalancer.server.port=80"
-      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-app-secure.entrypoints=${TRAEFIK_ENTRYPOINT}"
+      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-app-${TRAEFIK_ENTRYPOINT}.rule=Host(`${APP_HOST}`)"
+      - "traefik.http.services.${TRAEFIK_LABEL_ID}-app-${TRAEFIK_ENTRYPOINT}.loadbalancer.server.port=80"
+      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-app-${TRAEFIK_ENTRYPOINT}.entrypoints=${TRAEFIK_ENTRYPOINT}"
 
   storage:
     image: alswl/excalidraw-storage-backend:v2023.11.11
@@ -33,9 +33,9 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=${TRAEFIK_NETWORK_NAME}"
-      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-storage-secure.rule=Host(`${STORAGE_BACKEND_HOST}`)"
-      - "traefik.http.services.${TRAEFIK_LABEL_ID}-storage-secure.loadbalancer.server.port=8080"
-      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-storage-secure.entrypoints=${TRAEFIK_ENTRYPOINT}"
+      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-storage-${TRAEFIK_ENTRYPOINT}.rule=Host(`${STORAGE_BACKEND_HOST}`)"
+      - "traefik.http.services.${TRAEFIK_LABEL_ID}-storage-${TRAEFIK_ENTRYPOINT}.loadbalancer.server.port=8080"
+      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-storage-${TRAEFIK_ENTRYPOINT}.entrypoints=${TRAEFIK_ENTRYPOINT}"
 
   room:
     image: excalidraw/excalidraw-room:sha-49bf529
@@ -45,9 +45,9 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=${TRAEFIK_NETWORK_NAME}"
-      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-room-secure.rule=Host(`${ROOM_HOST}`)"
-      - "traefik.http.services.${TRAEFIK_LABEL_ID}-room-secure.loadbalancer.server.port=80"
-      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-room-secure.entrypoints=${TRAEFIK_ENTRYPOINT}"
+      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-room-${TRAEFIK_ENTRYPOINT}.rule=Host(`${ROOM_HOST}`)"
+      - "traefik.http.services.${TRAEFIK_LABEL_ID}-room-${TRAEFIK_ENTRYPOINT}.loadbalancer.server.port=80"
+      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-room-${TRAEFIK_ENTRYPOINT}.entrypoints=${TRAEFIK_ENTRYPOINT}"
 
   mongodb:
     image: mongo:7.0.5-jammy
@@ -78,9 +78,9 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=${TRAEFIK_NETWORK_NAME}"
-      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-db-secure.rule=Host(`${MONGOEXPRESS_HOST}`)"
-      - "traefik.http.services.${TRAEFIK_LABEL_ID}-db-secure.loadbalancer.server.port=8081"
-      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-db-secure.entrypoints=${TRAEFIK_ENTRYPOINT}"
+      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-db-${TRAEFIK_ENTRYPOINT}.rule=Host(`${MONGOEXPRESS_HOST}`)"
+      - "traefik.http.services.${TRAEFIK_LABEL_ID}-db-${TRAEFIK_ENTRYPOINT}.loadbalancer.server.port=8081"
+      - "traefik.http.routers.${TRAEFIK_LABEL_ID}-db-${TRAEFIK_ENTRYPOINT}.entrypoints=${TRAEFIK_ENTRYPOINT}"
 
 networks:
   proxy:
