@@ -31,8 +31,6 @@ The mongo-express can be reached under the host you configured for `MONGOEXPRESS
 
 ## Current Limitations
 
-There is an [issue](https://github.com/alswl/excalidraw-collaboration/issues/53), if a drawing consists images and the "Export to Link" function was used: This will lead to "break" the displaying of the images in the drawing. The images won't be displayed when using the export link and also not in collaboration mode.
-
 The "Export" function to the [Excalidraw+ workspace](https://plus.excalidraw.com/) is not working/supported. Also there is no solution for self-hosting your own workspace yet.
 
 ## Other Self-Hosted Solutions/Attemps
