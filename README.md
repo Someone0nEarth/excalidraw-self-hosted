@@ -36,7 +36,6 @@ The "Export" function to the [Excalidraw+ workspace](https://plus.excalidraw.com
 ## Other Self-Hosted Solutions/Attemps
 
 - <https://github.com/alswl/excalidraw-collaboration> (although providing a docker-compose example for a nginx setup)
-- <https://github.com/Nenodema/excalidraw-self-hosted-stack>
 - <https://github.com/cocreators-ee/excalidraw-alternative-store>
 
 Have fun,
